@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  min-height: 100vh;
+  background-color: #0F0D13;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 266px;
+  background-color: #2A2141;
+  border-radius: 10px;
+  padding: 38px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 29px;
+}
+
+.coverContainer {
+  overflow: hidden;
+  border-radius: 6px;
+  width: 190px;
+  height: 190px;
+  display: flex;
+  justify-content: center;
+}
+
+.songCover {
+  flex: 1;
+}
+
+.songInfo {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 10px;
+}
+
+.songInfo__title {
+  font-size: 1.5rem;
+  color: #E1E1E6;
+  font-weight: bold;
+}
+
+.songInfo__author {
+  font-size: 1.18rem;
+  color: #A5A2AF;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.controls__btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  width: 29px;
+  height: 29px;
+  color: #E1E1E6;
+  font-size: 24px;
+  outline: none;
+}
+
+.progressContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.progressBar {
+  cursor: pointer;
+  width: 100%;
+  height: 6px;
+  background-color: rgba(217, 217, 217, 0.3);
+  border-radius: 10px;
+}
+
+.progress {
+  background-color: #D9D9D9;
+  border-radius: 10px;
+  width: 50%;
+  height: 100%;
+  transition: width 0.1s linear;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  color: #C4C4CC;
+  opacity: 0.7;
+}

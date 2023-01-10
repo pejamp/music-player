@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <title>Music Player</title>
+</head>
+<body>
+  <div class="container">
+    <div class="coverContainer">
+      <img class="songCover" src="assets/images/song-cover.png" alt="capa da música">
+    </div>
+
+    <div class="songInfo">
+      <h1 class="songInfo__title">Acorda Devinho</h1>
+      <span class="songInfo__author">Banda Rocketseat</span>
+    </div>
+
+    <div class="controls">
+      <button id="prev" class="controls__btn">
+        <i class="fa-solid fa-backward"></i>
+      </button>
+      <button id="play" class="controls__btn">
+        <i class="fa-solid fa-play"></i>
+      </button>
+      <button id="next" class="controls__btn">
+        <i class="fa-solid fa-forward"></i>
+      </button>
+    </div>
+
+    <div class="progressContainer">
+      <div class="progressBar">
+        <div id="progress" class="progress"></div>
+      </div>
+      <div class="time">
+        <span id="full-time">3:20</span>
+        <span id="time-left">0:12</span>
+      </div>
+    </div>
+  </div>
+
+  <audio src="assets/songs/TURPAK - Synergy.mp3" id="audio"></audio>
+
+  <script src="main.js"></script>
+</body>
+</html>

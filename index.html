@@ -10,14 +10,14 @@
   <title>Music Player</title>
 </head>
 <body>
-  <div class="container">
+  <div class="container" id="widget">
     <div class="coverContainer">
       <img class="songCover" src="assets/images/song-cover.png" alt="capa da música">
     </div>
 
     <div class="songInfo">
-      <h1 class="songInfo__title">Acorda Devinho</h1>
-      <span class="songInfo__author">Banda Rocketseat</span>
+      <h1 class="songInfo__title" id="title">Acorda Devinho</h1>
+      <span class="songInfo__author" id="author">Banda Rocketseat</span>
     </div>
 
     <div class="controls">
@@ -33,17 +33,17 @@
     </div>
 
     <div class="progressContainer">
-      <div class="progressBar">
+      <div class="progressBar" id="progress-bar">
         <div id="progress" class="progress"></div>
       </div>
       <div class="time">
-        <span id="full-time">3:20</span>
-        <span id="time-left">0:12</span>
+        <span id="full-time"></span>
+        <span id="time-left"></span>
       </div>
     </div>
   </div>
 
-  <audio src="assets/songs/TURPAK - Synergy.mp3" id="audio"></audio>
+  <audio src="assets/songs/TURPAK-Synergy.mp3" id="audio"></audio>
 
   <script src="main.js"></script>
 </body>

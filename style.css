@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   min-height: 100vh;
   background-color: #0F0D13;
@@ -46,11 +52,13 @@ body {
   font-size: 1.5rem;
   color: #E1E1E6;
   font-weight: bold;
+  word-break: break-all;
 }
 
 .songInfo__author {
   font-size: 1.18rem;
   color: #A5A2AF;
+  word-break: break-all;
 }
 
 .controls {
@@ -88,7 +96,7 @@ body {
 .progress {
   background-color: #D9D9D9;
   border-radius: 10px;
-  width: 50%;
+  width: 0%;
   height: 100%;
   transition: width 0.1s linear;
 }

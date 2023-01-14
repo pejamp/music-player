@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #0F0D13;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.medium, .small {
+  max-width: 357px;
+  width: 100%;
+  padding: 29px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.medium .controls {
+  grid-column: span 2;
+  justify-content: space-evenly;
+}
+
+.medium .progressContainer {
+  grid-column: span 2;
+}
+
+.medium .coverContainer {
+  width: 84px;
+  height: 84px;
+}
+
+.medium .songInfo {
+  justify-content: center;
+}
+
+.small .controls {
+  grid-column: span 2;
+  justify-content: space-evenly;
+}
+
+.small .progressContainer {
+  display: none;
+}
+
+.small .coverContainer {
+  width: 84px;
+  height: 84px;
+}
+
+.small .songInfo {
+  justify-content: center;
+}

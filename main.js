@@ -9,6 +9,19 @@ const title = document.getElementById('title');
 const author = document.getElementById('author');
 const fullTime = document.getElementById('full-time');
 const timeLeft = document.getElementById('time-left');
+const widgetButton = document.getElementById('widget-button');
+
+widgetButton.addEventListener("click", () => {
+  const widgetClassList = widgetContainer.classList.value;
+
+  if (!widgetClassList.includes('medium') && !widgetClassList.includes('small')) {
+    widgetContainer.classList.add('medium');
+  } else if (widgetClassList.includes('medium')) {
+    widgetContainer.classList.replace('medium', 'small')
+  } else {
+    widgetContainer.classList.remove('medium', 'small');
+  }
+});
 
 const songs = [
   {
@@ -35,11 +48,8 @@ function loadSong(song) {
   title.innerText = song.title;
   author.innerText = song.author;
   audio.src = `assets/songs/${song.author}-${song.title}.mp3`;
-
-  if (Number.isNaN(audio.duration)) {
-    fullTime.innerText = '0:00';
-    timeLeft.innerText = '0:00';
-  }
+  fullTime.innerText = '0:00';
+  timeLeft.innerText = '0:00';
 
   setTimeout(() => {
     setTime();
